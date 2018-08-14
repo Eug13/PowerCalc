@@ -1,0 +1,13 @@
+.title{
+    color:rgba(255, 64, 64, 0.973);
+    background-color: #222222;
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    img{
+        display:none;
+    }
+}

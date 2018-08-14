@@ -1,0 +1,32 @@
+<div>
+<h3>YOU CAN MULTIPLY YOUR POWER!</h3><h6 style='color:white;'>POWERLIFTING | WEIGHTLIFTING | BODYBUILDING</h6>
+  <div [style.display]="allHide()">
+    <label for="car" style='color:red;font-weight:bold;'>ENTER YOUR 1 REP MAX KG:</label>
+    <input type="text" class='form-control' name='car' [(ngModel)]='carName'/>
+<hr/>
+    <label style='color:red;font-weight:bold;' for="exampleFormControlSelect1">HARD TRAINING DAY!</label>
+    <select  class='form-control' id="exampleFormControlSelect1" [(ngModel)]='dayHName' (change)='setHDay($event)'>
+      <option value="" disabled selected>Choose the day</option>
+      <option value='Monday'>Monday</option>
+      <option value='Tuesday'>Tuesday</option>
+      <option value='Wednesday'>Wednesday</option>
+      <option value='Thursday'>Thursday</option>
+      <option value='Friday'>Friday</option>
+    </select>
+
+    <hr/>
+    <label style='color:red;font-weight:bold;' for="exampleFormControlSelect1">RECOVERY TRAINING DAY!</label>
+    <select  class='form-control' id="exampleFormControlSelect1" [(ngModel)]='dayRName' (change)='setRDay($event)'>
+        <option value="" disabled selected>Choose the day</option>
+      <option value='Monday'>Monday</option>
+      <option value='Tuesday'>Tuesday</option>
+      <option value='Wednesday'>Wednesday</option>
+      <option value='Thursday'>Thursday</option>
+      <option value='Friday'>Friday</option>
+    </select>
+
+  <br>
+      <button class='btn btn-danger full' (click)='addCar()'>CALCULATE</button>
+    </div>
+</div>
+
